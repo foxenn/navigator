@@ -620,6 +620,9 @@ header{
 	background-size: contain;
 	left: 50%;
 	transform: translateX(-50%);
+	-webkit-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	-o-transform: translateX(-50%);
 	bottom: 32px;
 	z-index: 2;
 }
@@ -686,6 +689,9 @@ header{
 	left: 50%;
 	top: 50%;
 	transform: translate(-50%,-50%);
+	-webkit-transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
+	-o-transform: translate(-50%,-50%);
 	border-radius: 50%;
 	display: inline-block;
 	background-image: url('../images/icons/play_icon.png');
@@ -749,6 +755,9 @@ header{
 	left: 50%;
 	top: 50%;
 	transform: translate(-50%,-50%);
+	-webkit-transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
+	-o-transform: translate(-50%,-50%);
 	border-radius: 50%;
 	display: inline-block;
 	background-image: url('../images/icons/small_play_icon.png');
@@ -780,6 +789,9 @@ header{
 }
 .icon_right{
 	transform: rotate(-90deg);
+	-webkit-transform: rotate(-90deg);
+	-ms-transform: rotate(-90deg);
+	-o-transform: rotate(-90deg);
 }
 .feat_views{
 	font-size: 12px;
