@@ -801,3 +801,122 @@ header{
 	margin-right: 7px;
 }
 /*END: featured insurance*/
+
+/*START: Choose navigator*/
+
+
+.choose_navigator{
+	background-color: #58697A;
+}
+.choose_cover{
+	padding: 72px 0px;
+}
+.choose_cover .its_title h2{
+	color: #fff;
+}
+.choose_resons_cover{
+	padding: 63px 0px 72px;
+}
+.choose_reson_cont{
+	padding-bottom: 72px;
+	width: 60%;
+	margin: 0 auto;
+}
+.choose_resons_cover .item p{
+	font-size: 22px;
+	color: #fff;
+	margin: 0px;
+	font-family: Avenir_Roman;
+}
+#carousel-custom-dots li{
+	display: inline-block;
+	color: #a9b4be;
+	width: 125px;
+}
+#carousel-custom-dots li:hover{
+	color: #fff;
+	cursor: pointer;
+}
+#carousel-custom-dots li.active{
+	color: #fff;
+}
+.choose_reson_cont .owl-nav .owl-prev,
+.choose_reson_cont .owl-nav .owl-next{
+	position: absolute;
+	top: 0px;
+	background-color: transparent;
+}
+.choose_reson_cont .owl-nav .owl-prev:hover,
+.choose_reson_cont .owl-nav .owl-next:hover{
+	background-color: transparent;
+}
+.choose_reson_cont .owl-nav .owl-prev{
+	left: -20%;
+}
+.choose_reson_cont .owl-nav .owl-next{
+	right: -20%;
+}
+
+
+
+
+
+/*END: Choose navigator*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
