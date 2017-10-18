@@ -1208,5 +1208,10 @@ header{
 	margin-bottom: 66px;
 }
 .claim_name_N{
-	border-top: 1px solid 
+	border-top: 1px solid #dee2e6;
+	padding: 35px 0px;
+}
+.claim_name_N *{
+	margin: 0px;
+	display: inline-block;
 }
