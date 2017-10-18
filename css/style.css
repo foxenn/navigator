@@ -435,6 +435,11 @@ body{
 	margin-left: auto;
 	margin-right: auto;
 }
+.cont_container{
+	max-width: 860px;
+	margin-left: auto;
+	margin-right: auto;
+}
 .main{
 	width: 100%;
 }
@@ -451,10 +456,10 @@ header{
 .nav{
 	margin-top: 15px;
 }
-.nav li{
+.nav_cover li{
 	margin-right: 21px;
 }
-.nav li a{
+.nav_cover li a{
 	font-size: 12px;
 	color: #3f5364;
 	text-transform: uppercase;
@@ -489,7 +494,7 @@ header{
 .get_update_content{
 	margin-left: 35px;
 }
-.get_update_content h4{
+.get_update_content h3{
 	color: #fff;
 	font-size: 28px;
 	font-weight: bold;
@@ -809,16 +814,16 @@ header{
 	background-color: #58697A;
 }
 .choose_cover{
-	padding: 72px 0px;
+	padding: 69px 0px 63px;
 }
 .choose_cover .its_title h2{
 	color: #fff;
 }
 .choose_resons_cover{
-	padding: 63px 0px 72px;
+	padding: 58px 0px 0px;
 }
 .choose_reson_cont{
-	padding-bottom: 72px;
+	padding-bottom: 51px;
 	width: 60%;
 	margin: 0 auto;
 }
@@ -826,12 +831,14 @@ header{
 	font-size: 22px;
 	color: #fff;
 	margin: 0px;
+	line-height: 28px;
 	font-family: Avenir_Roman;
 }
 #carousel-custom-dots li{
 	display: inline-block;
 	color: #a9b4be;
 	width: 125px;
+	font-size: 14px;
 }
 #carousel-custom-dots li:hover{
 	color: #fff;
@@ -858,65 +865,348 @@ header{
 }
 
 
-
-
-
 /*END: Choose navigator*/
 
 
 
+/*about us banner*/
+
+.about_us_banner{
+	background-image: url('../images/backgrounds/about_banner.jpg');
+}
+
+.inner_banner{
+	min-height: 352px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+}
+.inner_banner .banner_tag_line{
+	padding-top: 140px;
+}
+.about_us_cover{
+	margin-bottom: 105px;
+}
+.about_us_cont{
+	padding: 69px 0px 0px;
+}
+.about_us_cont .its_title{
+	margin-bottom: 53px;
+}
+.about_para p{
+	font-size: 15px;
+	font-family: Avenir_Roman;
+	line-height: 27px;
+}
+.about_para{
+	margin-bottom: 31px;
+}
+.sub_title h4{
+	font-size: 26px;
+	font-weight: bold;
+}
+.sub_title{
+	margin-bottom: 22px;
+}
+
+.about_inner_img{
+	padding: 0px 78px;
+}
+.img_design_cover{
+	position: relative;
+	margin-bottom: 56px;
+}
+.img_bg_color{
+	background-color: #eff2f5;
+	width: 100%;
+}
+.img_bg_color img{
+	width: 95%;
+}
+
+/*orderlist design*/
+
+.order_list_cont{
+	padding: 20px 27px 12px;
+
+}
+.order_item{
+	display: table;
+	margin-bottom: 33px;
+}
+.order_no,
+.order_cont{
+	display: table-cell;
+	vertical-align: top;
+	padding: 0 11px;
+}
+.order_no .red_cont{
+	display: inline-block;
+	background-image: url('../images/icons/order_bg.png');
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center; 
+}
+.list_no_cover{
+	font-size: 14px;
+	text-align: center;
+	width: 30px;
+	height: 30px;
+	position: relative;
+}
+.list_no{
+	font-size: 14px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	display: inline-block;
+	transform: translate(-50%, -50%);
+}
+.order_cont h5{
+	margin-top: 2px;
+	font-size: 18px;
+	margin-bottom: 8px;
+}
+.order_cont p{
+	font-size: 15px;
+	font-family: Avenir_Roman;
+	margin-bottom: 0px;
+}
+
+/*block style*/
+
+.block_cover{
+	min-height: 513px;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+.block_one{
+	background-image: url('../images/backgrounds/about_cube1.jpg');
+	background-position: right;
+	background-color: #f2f5f8;
+}
+.block_two{
+	background-image: url('../images/backgrounds/about_cube2.jpg');
+	background-position: left;
+	background-color: #fff;
+}
+.block_box{
+	width: 50%;
+}
+.block_cont{
+	padding-top: 138px;
+	width: 414px;
+}
+.block_cont h3{
+	font-size: 30px;
+	margin-top: 0px;
+	margin-bottom: 30px;
+}
+.block_cont p{
+	font-size: 18px;
+	font-family: Avenir_Roman;
+	margin-bottom: 50px;
+	line-height: 28px;
+}
+.block_cont a{
+	color: #fff;
+	background-color: #f6303e;
+	font-size: 16px;
+	padding: 16px 24px;
+}
+.block_two .block_cont{
+	padding-left: 194px;
+}
 
 
+/*careers page style*/
+
+.careers_cover{
+	margin-bottom: 105px;
+}
+
+.careers_cont{
+	padding: 69px 0px 0px;
+}
+.careers_cont .its_title{
+	margin-bottom: 53px;
+}
+.careers_para p{
+	font-size: 15px;
+	font-family: Avenir_Roman;
+	line-height: 27px;
+}
+.careers_para{
+	margin-bottom: 31px;
+}
+
+.our_values{
+	background-color: #f2f5f8;
+}
+.values_cont_cover{
+	padding: 63px 0px 57px;
+}
+.value_col{
+	width: 25%;
+	float: left;
+}
+.val_icon_cover{
+	width: 68px;
+	height: 68px;
+	display: inline-block;
+	position: relative;
+	background-color: #fff;
+	border-radius: 50%;
+}
+.val_icon_cover img{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+.grid_of4{
+	margin-top: 69px;
+}
+.value_icon_row{
+	margin-bottom: 23px;
+}
+.value_cont h5{
+	font-size: 20px;
+	margin-top: 0px;
+	margin-bottom: 7px;
+}
+.value_cont p{
+	font-size: 15px;
+	font-family: Avenir_Roman;
+}
 
 
+/*//why work at nav*/
+
+.why_work_cover{
+	padding: 76px 0px 35px;
+}
+.why_work_cover .its_title{
+	padding-bottom: 90px;
+}
+.why_work_box{
+	width: 50%;
+	float: left;
+	min-height: 150px;
+	margin-bottom: 30px;
+}
+.why_work_cont{
+	width: 90%;
+}
+.why_work_cont h5{
+	font-size: 20px;
+	margin-top: 0px;
+	margin-bottom: 15px;
+}
+.why_work_cont p{
+	font-size: 15px;
+	font-family: Avenir_Roman;
+	line-height: 29px;
+}
+.alt_box{
+	margin-left: 52px;
+}
+
+.career_op{
+	background-color: #3f5364;
+}
+.career_op_cover{
+	width: 81.6%;
+	margin: 0 auto;
+	padding: 67px 0 0;
+}
+.career_op_cover .its_title h2{
+	color: #fff;
+}
+.career_op_cover .its_title{
+	margin-bottom: 45px;
+}
+.career_list{
+	padding-bottom: 45px;
+}
+.career_row{
+	padding: 40px 0 47px;
+	border-bottom: 2px solid #566877;
+	display: table;
+}
+.career_list li:last-child{
+	border-bottom: none;
+}
+.career_icon_cover{
+	padding: 0px 63px 0 50px;
+	display: table-cell;
+}
+.career_icon_cover img{
+	vertical-align: top;
+}
+/*.career_row > div{
+	float: left;
+}*/
+.career_name_D{
+	margin-bottom: 21px;
+}
+.career_name_D h4{
+	font-size: 24px;
+	color: #fff;
+}
+.career_cont{
+	display: table-cell;
+}
+.career_name_D p{
+	font-size: 16px;
+	font-family: Avenir_Roman;
+	color: #B1BAC1;
+	margin: 0px;
+}
+.career_desc p{
+	font-size: 15px;
+	font-family: Avenir_Roman;
+	color: #fff;
+	margin: 0px;
+	line-height: 28px;
+}
+.career_desc{
+	margin-bottom: 29px;
+}
+.career_cont a{
+	padding: 12px 24px;
+	background-color: #f6303e;
+	color: #fff;
+	font-size: 16px;
+	display: inline-block;
+}
 
 
+/*claims page*/
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.claims_banner{
+	background-image: url('../images/backgrounds/claims_bg.jpg');
+}
+.claims_cover{
+	margin-bottom: 105px;
+}
+.claims_cont{
+	padding: 74px 0px 0px;
+}
+.about_us_cont .its_title{
+	margin-bottom: 53px;
+}
+.about_para p{
+	font-size: 15px;
+	font-family: Avenir_Roman;
+	line-height: 27px;
+}
+.about_para{
+	margin-bottom: 31px;
+}
+.claims_cont .its_title{
+	margin-bottom: 66px;
+}
+.claim_name_N{
+	border-top: 1px solid 
+}
