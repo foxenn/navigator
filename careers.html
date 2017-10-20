@@ -22,44 +22,59 @@
 	<div class="main">
 
 		<!-- header -->
-		<header>
+		<header id="sub_nav_header">
 			<div class="outer_container">
 				<div class="logo pull_left">
 					<a class="inl_block full_width" href="javascript:void(0);">
 						<img src="images/logo/logo.svg" alt="">
 					</a>
 				</div>
-				<div class="nav-right pull_right">
+
+				<div class="pull_right">
 					<div class="nav_cover inl_block">
-						<!-- <div class="nav make_tiny">
-							<ul>
-								<li class="inl_block"><a href="javascript:void(0);">claim center</a></li>
-								<li class="inl_block"><a href="javascript:void(0);">about us</a></li>
-								<li class="inl_block"><a href="javascript:void(0);">resources</a></li>
-								<li class="inl_block"><a href="javascript:void(0);">contact</a></li>
-							</ul>
-						</div> -->
-						<div class="nav add_on_nav">
-							<ul>
-								<li class="inl_block"><a href="javascript:void(0);">cars</a></li>
-								<li class="inl_block"><a href="javascript:void(0);">home</a></li>
-								<li class="inl_block"><a href="javascript:void(0);">tenant/renter</a></li>
-								<li class="inl_block"><a href="javascript:void(0);">condo owner</a></li>
-								<li class="inl_block"><a href="javascript:void(0);">motorcycle</a></li>
-								<li class="inl_block"><a href="javascript:void(0);">other services</a></li>
-							</ul>
-						</div>
+						<ul class="nav text-right main_nav">
+							<li class="inl_block"><a href="javascript:void(0);">claim center</a></li>
+							<li class="inl_block active"><a href="javascript:void(0);">about us</a></li>
+							<li class="inl_block"><a href="javascript:void(0);">resources</a></li>
+							<li class="inl_block"><a href="javascript:void(0);">contact</a></li>
+						</ul>
+						<ul class="nav text-right sub_nav">
+							<li class="inl_block"><a href="javascript:void(0);">cars</a></li>
+							<li class="inl_block"><a href="javascript:void(0);">home</a></li>
+							<li class="inl_block"><a href="javascript:void(0);">tenant/renter</a></li>
+							<li class="inl_block"><a href="javascript:void(0);">condo owner</a></li>
+							<li class="inl_block"><a href="javascript:void(0);">motorcycle</a></li>
+							<li class="inl_block"><a href="javascript:void(0);">other services</a></li>
+						</ul>
 					</div>
-					<div class="get_quote inl_block">
+					<div class="get_quote inl_block vtop">
 						<a href="javascript:void(0);" class="inl_block">get a quote</a>
 					</div>
-					<div class="search_icon inl_block">
-						<span><img src="images/icons/search.svg" alt=""></span>
+
+
+					<!-- Search bar here -->
+					<div class="search_bar_top inl_block">
+						<span class="search_bar_cover inl_block">
+							<input id="search__input" type="text" placeholder="">
+							<p class="act_placeholder">Tap to search...</p>
+						</span>
+					</div>
+
+					<!-- search icon toggle - in js -->
+					<div class="search_icon inl_block vtop">
+						<span id="search_btn">
+							<img src="images/icons/search.svg" alt="">
+						</span>
+						<span id="search_close_btn">
+							<img src="images/icons/cross_red.svg" alt="">
+						</span>
 					</div>
 				</div>
+
 				<div class="clear_fix"></div>
 			</div>
 		</header>
+
 		
 
 		<!-- careers banner -->

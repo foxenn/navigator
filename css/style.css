@@ -347,6 +347,9 @@ button, .button, input[type="button"], input[type="reset"], input[type="submit"]
 .hide {
 	display: none;
 }
+.block{
+	display: block;
+}
 .inl_block{
 	display: inline-block;
 }
@@ -397,6 +400,15 @@ button, .button, input[type="button"], input[type="reset"], input[type="submit"]
 .child_inline *{
 	display: inline-block;
 }
+.make_table{
+	display: table;
+}
+.table_cell{
+	display: table-cell;
+}
+.make_relative{
+	position: relative;
+}
 /*font impotorted here*/
 @font-face{
 	font-family: Avenir_Black;
@@ -441,6 +453,10 @@ body{
 	margin-left: auto;
 	margin-right: auto;
 }
+.inner_container{
+	max-width: 972px;
+	margin: 0 auto;
+}
 .main{
 	width: 100%;
 }
@@ -449,13 +465,13 @@ body{
 }
 /*START: Header style*/
 header{
-	padding: 24px 0px 25px;
+	padding: 24px 52px 25px;
 }
 .logo a{
 	width: 251px;
 }
 .nav{
-	margin-top: 14px;
+	margin-top: 10px;
 }
 .nav_cover li{
 	margin-right: 18px;
@@ -469,12 +485,13 @@ header{
 }
 .get_quote a{
 	text-transform: uppercase;
-	padding: 11px 18px 10px;
+	padding: 10px 18px 10px;
 	color: #fff;
 	font-family: Avenir_Heavy;
 	background-color: #f6303e;
 	font-size: 12px;
 	margin-top: 3px;
+	margin-left: 2px;
 }
 .search_icon{
 	margin-top: 10px;
@@ -489,8 +506,69 @@ header{
 }
 
 #sub_nav_header .main_nav{
-	margin-top: 0px;
+	margin-top: -7px;
 }
+
+.search_bar_top{
+	width: 860px;
+	padding: 8px 0px;
+	display: none;
+}
+.search_bar_cover{
+	position: relative;
+	width: 100%;
+}
+.search_bar_cover::before{
+	content: "";
+	position: absolute;
+	top: 2px;
+	left: -50px;
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	background-image: url('../images/icons/search_grey.svg');
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+.search_bar_cover p{
+	font-size: 24px;
+	font-family: Avenir_Book;
+	margin: 0px;
+	position: absolute;
+	top: -2px;
+	left: 0px;
+	color: #3f5364;
+	z-index: -1;
+}
+.search_bar_cover input[type="text"]{
+	border: none;
+	outline: none;
+	background-color: transparent;
+	font-size: 24px;
+	font-family: Avenir_Book;
+	width: 100%;
+	z-index: 3;
+	padding: 0px;
+}
+#search_close_btn{
+	display: none;
+}
+/*//double header*/
+#sub_nav_header .main_nav li a{
+	font-size: 11px;
+	color: #9fa9b1;
+}
+#sub_nav_header .main_nav li.active a{
+	color: #3f5364;
+}
+#sub_nav_header .sub_nav li a{
+	text-transform: capitalize;
+	font-size: 15px;
+}
+#sub_nav_header .sub_nav{
+	margin-top: 9px;
+}
+
 /*END: Header style*/
 
 
@@ -601,6 +679,9 @@ header{
 	margin-bottom: 0px;
 	font-size: 12px;
 	font-family: Avenir_Heavy;
+}
+.sociol_icon{
+	margin-top: -4px;
 }
 .sociol_icon li{
 	margin: 0px 5px;
@@ -930,13 +1011,13 @@ header{
 }
 .img_design_cover{
 	position: relative;
-	margin-bottom: 56px;
+	margin-bottom: 89px;
 }
 .img_bg_color{
-	background-color: #eff2f5;
 	width: 100%;
 }
 .img_bg_color img{
+	box-shadow: 30px 30px 0px #eff2f5;
 	width: 95%;
 }
 
@@ -1204,7 +1285,7 @@ header{
 	background-image: url('../images/backgrounds/claims_bg.jpg');
 }
 .claims_cover{
-	margin-bottom: 105px;
+	margin-bottom: 74px;
 }
 .claims_cont{
 	padding: 74px 0px 0px;
@@ -1223,13 +1304,19 @@ header{
 .claims_cont .its_title{
 	margin-bottom: 66px;
 }
+.claim_names_cover{
+	margin: 47px 0px 10px;
+}
 .claim_name_N{
 	border-top: 1px solid #dee2e6;
-	padding: 35px 0px;
+	padding: 32px 0px 33px;
 }
 .claim_name_N *{
 	margin: 0px;
 	display: inline-block;
+}
+.claim_no h5{
+	font-family: Avenir_Roman;
 }
 
 /*career single page*/
@@ -1239,10 +1326,11 @@ header{
 	background-image: url('../images/backgrounds/career_single_bg.jpg');
 }
 .carr_sing_cover{
-	margin-bottom: 105px;
+	margin-bottom: 76px;
 }
 .carr_sing_cont{
-	padding: 83px 0px;
+	padding: 83px 0px 10px;
+	padding-right: 30px;
 }
 .carr_sing_cont .its_title{
 	margin-bottom: 53px;
@@ -1263,11 +1351,37 @@ header{
 .carr_sing_link a{
 	background-color: #f6303e;
 	color: #fff;
-	padding: 23px 60px;
+	padding: 20px 59px;
 	display: inline-block;
+	margin-top: 6px;
 }
-
-
+.share_icons_cover{
+	width: 66px;
+}
+.share_icons_cover span{
+	width: 36px;
+	height: 36px;
+	background-color: #f2f5f8;
+	display: inline-block;
+	border-radius: 50%;
+	position: relative;
+}
+.share_icons_cover li{
+	height: 39px;
+}
+.share_icons_cover span img{
+	height: 15px;
+	vertical-align: bottom;
+	position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.share_icons_cover > p{
+	text-transform: uppercase;
+	text-align: center;
+	margin-bottom: 5px;
+}
 /*product landing page*/
 
 .prod_land_banner{
@@ -1475,28 +1589,149 @@ header{
 
 
 
+/*home page drop get_quote*/
+
+.home_pg_drop_get_quote{
+	min-height: 692px;
+    background-image: url(../images/backgrounds/product_land_bnr_bg.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: #3f5364;
+    position: relative;
+}
+.home_pg_drop_get_quote::before{
+	background-image: url(../images/backgrounds/home_quote_shade.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 12%;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    content: "";
+    left: 0px;
+}
+.drop_head_cover .its_title h2{
+	color: #fff;
+}
+.drop_head_cover .its_title p{
+	font-family: Avenir_Roman;
+	font-size: 18px;
+	text-transform: none;
+	color: #9ca6af;
+}
+.drop_head_cover .banner_head .pro_ban_icon{
+	margin-bottom: 25px;
+}
+
+/*resource single banner*/
+
+.resource_single_banner{
+	background-image: url('../images/backgrounds/resource_single_banner.jpg');
+}
+.res_sing_cover{
+	margin-bottom: 70px;
+}
+.res_sing_cont{
+	padding: 83px 0px 10px;
+	padding-right: 30px;
+}
+.res_sing_cont .its_title{
+	margin-bottom: 53px;
+}
+.title_date p{
+	color: #3f5364;
+	font-size: 16px;
+	font-family: Avenir_Roman;
+}
+.res_sing_para p{
+	font-size: 15px;
+	font-family: Avenir_Roman;
+	line-height: 27px;
+}
+.carr_sing_para{
+	margin-bottom: 31px;
+}
+.prev_next_cover{
+	margin: 25px 0px;
+}
+.prev_next_cover li:first-child{
+	margin-right: 20px;
+}
+.prev_next_cover li a{
+	display: inline-block;
+	background-color: #f2f5f8;
+	color: #3f5364;
+	font-size: 18px;
+	width: 220px;
+	padding: 16px 0px 17px;
+}
 
 
+/*resources main style*/
 
+.res_main_cover{
+	padding: 70px 0px 53px;
+	background-color: #f2f5f8;
+}
+.res_m_Drop_n_Search li > a{
+	font-size: 16px;
+	color: #3f5364;
+	font-family: Avenir_Roman;
+}
+.res_m_Drop_n_Search li:first-child{
+	width: 275px;
+	padding: 12px 17px;
+	border: 1px solid #d4dde6;
+	margin-right: 20px;
+	background-color: #fff;
+	text-align: left;
+}
+.res_m_Drop_n_Search li input[type="text"]{
+	border: 1px solid #d4dde6;
+	width: 275px;
+	padding: 14px 17px 15px;
+	font-size: 16px;
+	color: #3f5364;
+	font-family: Avenir_Roman;
+}
+.res_m_Drop_n_Search {
+	padding-bottom: 40px;
+}
+.res_m_Drop_n_Search .res_arw_drop{
+	position: absolute;
+	top: 10px;
+	right: 5px;
+}
+.res_m_Drop_n_Search .res_arw_drop img{
+	width: 35px;
+    height: 28px;
+    transform: rotate(90deg);
+}
+.res_m_Drop_n_Search .res_search img{
+	width: 18px;
+    height: 19px;
+}
+.res_m_Drop_n_Search .res_search{
+	position: absolute;
+	top: 10px;
+	right: 17px;
+}
+.load_more{
+	margin: 69px 0px 15px;
+}
+.load_more a{
+	width: 219px;
+	display: inline-block;
+	color: #fff;
+	padding: 17px;
+	font-size: 16px;
+	background-color: #f6303e;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.res_main_cover .feature_cards{
+	padding-top: 26px;
+}
 
 
 
