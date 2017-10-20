@@ -320,13 +320,6 @@ button, .button, input[type="button"], input[type="reset"], input[type="submit"]
 	text-transform: uppercase;
 	vertical-align: bottom;
 }
-button:hover, button:focus, .button:hover, .button:focus, input[type="button"]:hover, input[type="button"]:focus, input[type="reset"]:hover, input[type="reset"]:focus, input[type="submit"]:hover, input[type="submit"]:focus {
-	background-color: #41a62a;
-	color: #fff;
-}
-button:active, .button:active, input[type="button"]:active, input[type="reset"]:active, input[type="submit"]:active {
-	background-color: #55d737;
-}
 .search-field {
 	width: 100%;
 }
@@ -417,6 +410,14 @@ button:active, .button:active, input[type="button"]:active, input[type="reset"]:
 	font-family: Avenir_Roman;
 	src: url('../fonts/Avenir_Roman.otf');
 }
+@font-face{
+	font-family: Avenir_Light;
+	src: url('../fonts/Avenir_Light.otf');
+}
+@font-face{
+	font-family: Avenir_Book;
+	src: url('../fonts/Avenir_Book.otf');
+}
 
 /*START: Custom Style*/
 body{
@@ -448,37 +449,48 @@ body{
 }
 /*START: Header style*/
 header{
-	padding: 24px 52px;
+	padding: 24px 0px 25px;
 }
 .logo a{
 	width: 251px;
 }
 .nav{
-	margin-top: 15px;
+	margin-top: 14px;
 }
 .nav_cover li{
-	margin-right: 21px;
+	margin-right: 18px;
 }
 .nav_cover li a{
 	font-size: 12px;
 	color: #3f5364;
+	font-family: Avenir_Heavy;
 	text-transform: uppercase;
+	letter-spacing: 0.5px;
 }
 .get_quote a{
 	text-transform: uppercase;
-	padding: 11px 20px;
+	padding: 11px 18px 10px;
 	color: #fff;
+	font-family: Avenir_Heavy;
 	background-color: #f6303e;
 	font-size: 12px;
+	margin-top: 3px;
 }
 .search_icon{
-	margin-top: 14px;
-	margin-left: 18px;
+	margin-top: 10px;
+	margin-left: 17px;
+}
+.search_icon img{
+	width: 15px;
+	height: 15px;
 }
 .search_icon:hover{
 	cursor: pointer;
 }
 
+#sub_nav_header .main_nav{
+	margin-top: 0px;
+}
 /*END: Header style*/
 
 
@@ -588,12 +600,16 @@ header{
 	color: #98a6b1;
 	margin-bottom: 0px;
 	font-size: 12px;
+	font-family: Avenir_Heavy;
 }
 .sociol_icon li{
-	margin-right: 10px;
+	margin: 0px 5px;
 }
 .sociol_icon li:last-child{
 	margin-right: 0px;
+}
+.sociol_icon li img{
+	height: 17px;
 }
 /*END: footer style*/
 
@@ -1215,3 +1231,317 @@ header{
 	margin: 0px;
 	display: inline-block;
 }
+
+/*career single page*/
+
+
+.career_single_banner{
+	background-image: url('../images/backgrounds/career_single_bg.jpg');
+}
+.carr_sing_cover{
+	margin-bottom: 105px;
+}
+.carr_sing_cont{
+	padding: 83px 0px;
+}
+.carr_sing_cont .its_title{
+	margin-bottom: 53px;
+}
+.title_date p{
+	color: #3f5364;
+	font-size: 16px;
+	font-family: Avenir_Roman;
+}
+.carr_sing_para p{
+	font-size: 15px;
+	font-family: Avenir_Roman;
+	line-height: 27px;
+}
+.carr_sing_para{
+	margin-bottom: 31px;
+}
+.carr_sing_link a{
+	background-color: #f6303e;
+	color: #fff;
+	padding: 23px 60px;
+	display: inline-block;
+}
+
+
+/*product landing page*/
+
+.prod_land_banner{
+	min-height: 528px;
+	background-image: url('../images/backgrounds/product_land_bnr_bg.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.banner_head {
+	padding: 88px 0px 0px;
+}
+.banner_head .pro_ban_icon{
+	display: inline-block;
+	width: 125px;
+	height: 125px;
+	background-color: #fff;
+	background-image: url('../images/icons/house_icon.png');
+	background-position: center;
+	background-repeat: no-repeat;
+	margin-bottom: 42px;
+	border-radius: 50%;
+}
+.banner_head p{
+	font-size: 16px;
+	text-transform: uppercase;
+	font-family: Avenir_Heavy;
+	color: #fff;
+	margin-bottom: 20px;
+}
+.banner_head h1{
+	font-weight: bold;
+	font-size: 53px;
+	color: #fff;
+	line-height: 65px;
+
+}
+.banner_head a{
+	background-color: #f6303e;
+	color: #fff;
+	padding: 20px 55px;
+	display: inline-block;
+	font-size: 18px;
+	margin-top: 50px;
+}
+
+.band_tabs_cover{
+	margin: 65px 0px;
+}
+.pro_tab{
+	padding: 7px 18px 15px;
+	border-right: 2px solid #dee2e6;
+	display: inline-block;
+}
+.pro_tab a{
+	font-size: 18px;
+	color: #3f5364
+}
+.band_tabs_cover li:last-child{
+	border-right: none;
+}
+.what_prod_cover{
+	margin: 50px 0px;
+	display: table;
+}
+.prod_left_img,
+.wht_prod_cont{
+	display: table-cell;
+	width: 50%;
+}
+.wht_img_cover{
+	width: 100%;
+	position: relative;
+}
+.wht_img_cover img{
+	max-width: 95%;
+	box-shadow: 35px 40px 0px #eff2f5;
+}
+.wht_prod_cont{
+	padding-top: 75px;
+	vertical-align: top;
+	padding-left: 100px;
+}
+.wht_QnA h3{
+	font-size: 30px;
+	margin-bottom: 42px;
+	margin-top: 0px;
+}
+.wht_QnA p{
+	font-size: 18px;
+	font-family: Avenir_Roman;
+	line-height: 27px;
+}
+.wht_prod_cont a{
+	display: inline-block;
+    color: #3f5364;
+    padding: 10px 35px;
+    border: 2px solid #f6303e;
+}
+.wht_prod_cont .order_list_cont,
+.wht_prod_cont .order_no {
+    padding-left: 0px;
+}
+.wht_prod_cont .order_no .list_no_cover{
+	background-image: url(../images/icons/tick.png);
+}
+.wht_img_cover::before{
+	content: "";
+	background-image: url('../images/product_arrow_top.png');
+	background-repeat: no-repeat;
+	position: absolute;
+	right: -13%;
+    top: 17%;
+	display: inline-block;
+	width: 305px;
+	height: 76px;
+	z-index: -1;
+}
+.another_info .wht_prod_cont{
+	padding-left: 0px;
+	padding-right: 140px;
+}
+.another_info .wht_img_cover img{
+	box-shadow: -35px 40px 0px #eff2f5;
+}
+.another_info .wht_img_cover::before{
+	left: -15%;
+	right: auto;
+    top: 100px;
+}
+
+
+.get_home_quote{
+	background-color: #3f5364;
+}
+.get_quote_cover{
+	padding: 84px 0px;
+}
+
+.get_quote_cover .its_title h2{
+	color: #fff;
+}
+.get_quote_cover .its_title p{
+	font-size: 18px;
+	color: #fff;
+	font-family: Avenir_Roman;
+	margin-top: 10px;
+}
+
+#get_quote_nav{
+	margin: 53px 0px;
+}
+
+#get_quote_nav li{
+	padding: 0px 40px;
+	border-right: 2px solid #5c6d7b; 
+	display: inline-block;
+}
+#get_quote_nav li:hover{
+	cursor: pointer;
+}
+#get_quote_nav li:last-child{
+	border-right: none;
+}
+#get_quote_nav li p{
+	color: #fff;
+	font-size: 18px;
+	margin-top: 20px;
+}
+.get_op_icon img{
+	width: 50px;
+	height: 51px;
+}
+
+
+
+.get_q_row{
+	display: table;
+	width: 100%
+}
+.get_q_row input[type="text"],
+.get_q_row input[type="number"]{
+	width: 23%;
+    height: 50px;
+    font-family: Avenir_Roman;
+    font-size: 16px;
+    background-color: #fff;
+    color: #3f5364;
+    display: table-cell;
+    border-radius: 0px;
+    margin-right: 10px;
+    border: none;
+}
+.get_q_row input[type="submit"]{
+    width: 23%;
+    display: table-cell;
+    height: 50px;
+    font-size: 16px;
+}
+.get_q_row input[type="submit"]:hover{
+	background-color: #f6303e;
+}
+.get_options_cover{
+	width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

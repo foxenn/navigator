@@ -1,7 +1,10 @@
 //why choose slider
 $(document).ready(function() {
-  var owl = $('.owl-carousel');
-  owl.owlCarousel({
+  var oneOwl = $('#choose_me_owl');
+  var twoOwl = $('#get_quote_tab_owl');
+
+  //choose me why slider
+  oneOwl.owlCarousel({
     items: 1,
     loop: true,
     margin: 10,
@@ -12,14 +15,52 @@ $(document).ready(function() {
     autoplayHoverPause: false,
     dotsContainer: '#carousel-custom-dots'
   });
-  $('.play').on('click', function() {
-    owl.trigger('play.owl.autoplay', [1000])
-  })
-  $('.stop').on('click', function() {
-    owl.trigger('stop.owl.autoplay')
-  })
+  // $('.play').on('click', function() {
+  //   oneOwl.trigger('play.oneOwl.autoplay', [1000])
+  // })
+  // $('.stop').on('click', function() {
+  //   oneOwl.trigger('stop.oneOwl.autoplay')
+  // })
   $('.owl-dot').click(function () {
-	  owl.trigger('to.owl.carousel', [$(this).index(), 300]);
+	  oneOwl.trigger('to.oneOwl.carousel', [$(this).index(), 300]);
 	})
+
+  //get quote options 
+  twoOwl.owlCarousel({
+    items: 1,
+    loop: true,
+    margin: 10,
+    animateOut: 'fadeIn',
+    animateIn: 'fadeOut',
+    autoplayHoverPause: false,
+    smartSpeed:450,
+    dotsContainer: '#get_quote_nav'
+  });
+  // $('.play').on('click', function() {
+  //   twoOwl.trigger('play.twoOwl.autoplay', [1000])
+  // })
+  // $('.stop').on('click', function() {
+  //   twoOwl.trigger('stop.twoOwl.autoplay')
+  // })
+  $('#twoOwl .owl-dot').click(function () {
+    twoOwl.trigger('to.twoOwl.carousel', [$(this).index(), 300]);
+  })
+
+
+
+
+
+
+
 })
+
+
+
+
+
    
+
+
+
+
+
