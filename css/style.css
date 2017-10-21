@@ -39,7 +39,7 @@ body, button, input, select, textarea {
 	line-height: 1.5;
 }
 a {
-	color: #24890d;
+	color: #3f5364;
 	text-decoration: none;
 	transition: all 0.5s ease 0s;
 	-webkit-transition: all 0.5s ease 0s;
@@ -53,7 +53,7 @@ a:hover, a:active {
 	outline: 0;
 }
 a:active, a:hover {
-	color: #7ab509;
+	color: #3f5364;
 }
 h1, h2, h3, h4, h5, h6 {
 	clear: both;
@@ -376,6 +376,9 @@ button, .button, input[type="button"], input[type="reset"], input[type="submit"]
 .full_width{
 	max-width: 100%;
 }
+.full_stretch{
+	width: 100%;
+}
 .clear_fix{
 	clear: both;
 }
@@ -408,6 +411,9 @@ button, .button, input[type="button"], input[type="reset"], input[type="submit"]
 }
 .make_relative{
 	position: relative;
+}
+.underline{
+	border-bottom: 1px solid;
 }
 /*font impotorted here*/
 @font-face{
@@ -447,6 +453,10 @@ body{
 	max-width: 1185px;
 	margin-left: auto;
 	margin-right: auto;
+}
+.sub_main_container{
+	max-width: 1020px;
+	margin: 0 auto;
 }
 .cont_container{
 	max-width: 860px;
@@ -1401,15 +1411,15 @@ header{
 	background-image: url('../images/icons/house_icon.png');
 	background-position: center;
 	background-repeat: no-repeat;
-	margin-bottom: 42px;
+	margin-bottom: 30px;
 	border-radius: 50%;
 }
 .banner_head p{
-	font-size: 16px;
+	font-size: 18px;
 	text-transform: uppercase;
 	font-family: Avenir_Heavy;
 	color: #fff;
-	margin-bottom: 20px;
+	margin-bottom: 2px;
 }
 .banner_head h1{
 	font-weight: bold;
@@ -1421,17 +1431,17 @@ header{
 .banner_head a{
 	background-color: #f6303e;
 	color: #fff;
-	padding: 20px 55px;
+	padding: 15px 59px 18px;
 	display: inline-block;
 	font-size: 18px;
-	margin-top: 50px;
+	margin-top: 34px;
 }
 
 .band_tabs_cover{
-	margin: 65px 0px;
+	margin: 65px 0px 68px;
 }
 .pro_tab{
-	padding: 7px 18px 15px;
+	padding: 0px 16px 8px;
 	border-right: 2px solid #dee2e6;
 	display: inline-block;
 }
@@ -1734,42 +1744,242 @@ header{
 }
 
 
+/*search page style*/
+
+.search_banner{
+	min-height: 249px;
+	background-color: #3f5364;
+}
+.search_banner .banner_tag_line{
+	padding-top: 91px;
+}
+.search_banner .banner_tag_line h1{
+	font-size: 54px;
+}
+.search_result_cover{
+	background-color: #f2f5f8;
+	padding: 91px 0px 74px;
+}
+.search_result_cover .its_title span{
+	font-family: Avenir_Book;
+}
+.search_res_card_cv{
+	margin: 54px 0px 20px;
+}
+.search_card{
+	padding: 38px 37px 35px;
+	background-color: #fff;
+}
+.search_card h5{
+	font-size: 18px;
+	padding-right: 13px;
+}
+.search_card a span img{
+	width: 23px;
+	height: 23px;
+	transform: rotate(-90deg);
+	margin-top: -5px;
+}
+.search_card{
+	margin-bottom: 8px;
+}
+.search_res_name{
+	margin-bottom: 10px;
+}
+.search_res_desc p{
+	font-size: 14px;
+	font-family: Avenir_Roman;
+	margin: 0px;
+}
+.search_res_head h2{
+	line-height: 41px;
+}
+.search_res_card_cv li:last-child{
+	margin-bottom: 0px;
+}
 
 
+/*our team section*/
+
+.out_team_section{
+	background-color: #f2f5f8;
+	padding: 67px 0px 71px;
+}
+.team_head_para{
+	margin: 54px auto 82px;
+	max-width: 700px;
+}
+.team_head_para p{
+	font-size: 18px;
+	font-family: Avenir_Roman;
+	margin: 0px;
+	line-height: 28px;
+}
+.team_mem_desc{
+	padding: 51px 52px;
+	vertical-align: top;
+}
+.team_mem_desc .sub_title p{
+	font-size: 16px;
+	color: #9fa9b1;
+	text-transform: uppercase;
+	font-family: Avenir_Roman;
+	margin: 4px 0 0 0;
+}
+.team_mem_desc .sub_title{
+	margin-bottom: 35px;
+}
+.team_mem_para{
+	margin-bottom: 28px;
+}
+.team_mem_para p{
+	font-family: Avenir_Roman;
+	font-size: 15px;
+	margin: 0px;
+	line-height: 28px;
+}
+.team_mem_tab{
+	background-color: #fff;
+	margin-bottom: 18px;
+}
 
 
+/*contact us*/
 
+.contact_us_banner{
+	background-image: url('../images/backgrounds/contact_us_banner.jpg');
+}
+.contact_us_cover{
+	margin: 74px 0px 57px;
+	width: 100%;
+}
+.gen_enq p{
+	font-size: 26px;
+	font-family: Avenir_Roman;
+	line-height: 28px;
+	line-height: 42px;
+}
+.gen_enq .its_title{
+	margin-bottom: 33px;
+}
+.off_loc .its_title,
+.off_hours .its_title{
+	margin-bottom: 37px;
+}
+.off_hours{
+	padding-right: 70px;
+}
+.gen_enq,
+.off_loc{
+	margin-bottom: 51px;
+}
+.loc_add_cont > h6{
+	font-family: Avenir_Heavy;
+	font-size: 18px;
+	margin-top: 0px;
+	margin-bottom: 3px;
+}
+.loc_add_col p,
+.loc_add_col span{
+	font-family: Avenir_Book;
+	font-size: 18px;
+	margin-top: 0px;
+	margin-bottom: 10px;
+	line-height: 28px;
+}
+.off_loc_space{
+	padding-right: 84px;
+}
+.loc_add_cont{
+	margin-bottom: 13px;
+}
+.loc_num_cont h6{
 
+}
+.days_cover h6{
+	font-family: Avenir_Heavy;
+	font-size: 18px;
+	margin-top: 0px;
+	margin-bottom: 3px;
+}
+.days_cover span{
+	font-family: Avenir_Book;
+	font-size: 18px;
+	margin-top: 0px;
+	margin-bottom: 3px;
+}
+.days_space{
+	padding-right: 29px;
+}
+.off_h_para p{
+	margin-top: 34px;
+	font-size: 15px;
+	font-family: Avenir_Roman;
+	line-height: 29px;
+}
+.email_cover .its_title{
+	padding-bottom: 21px;
+}
+/*form style*/
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.form_row{
+	margin: 14px 0px;
+}
+.form_row label{
+	margin-bottom: 5px;
+	display: block;
+}
+.form_box{
+    padding: 12px 17px;
+    border: 1px solid #d4dde6;
+    background-color: #fff;
+    text-align: left;
+}
+.form_box_inp{
+	border: 1px solid #d4dde6;
+    padding: 14px 17px 15px;
+    font-size: 16px;
+    color: #3f5364;
+    font-family: Avenir_Roman;
+    resize: none;
+}
+.select_frm_f{
+	width: 426px;
+}
+.full_frm_f{
+	width: 461px;
+}
+.half_frm_f{
+	width: 221px;
+}
+.half_f_margin{
+	margin-right: 21px;
+}
+.form_box a{
+	font-size: 16px;
+    font-family: Avenir_Roman;
+}
+.form_arw_drop{
+	position: absolute;
+    top: 10px;
+    right: 5px;
+}
+.form_arw_drop img{
+	width: 35px;
+    height: 28px;
+    transform: rotate(90deg);
+}
+textarea.form_box_inp{
+	height: 156px;
+}
+.form_row button{
+	width: 219px;
+	padding: 15px 0px 16px;
+	text-align: center;
+	text-transform: capitalize;
+	font-size: 16px;
+	margin-top: 6px;
+}
 
 
 
