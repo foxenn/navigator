@@ -67,6 +67,31 @@ $(document).ready(function() {
     }
   });
 
+  //END:  PLaceholder search functionality
+
+  //START:  PLaceholder subscribe functionality
+
+  $('#sub_email_inp').on("keypress", function(){
+      $(this).siblings('.act_placeholder').eq(0).hide();
+  });
+
+  $('#sub_email_inp').on({
+    blur: function(){
+      if($(this).val() == "") {
+          $(this).siblings('.act_placeholder').eq(0).show();
+      }
+    },
+    keyup: function(){
+      if($(this).val() == "") {
+          $(this).siblings('.act_placeholder').eq(0).show();
+      }
+    }
+  });
+
+  //END:  Placeholder subscribe functionality
+
+
+  //START: show search bar
 
   $('#search_btn').on("click", showSearchBar);
   $('#search_close_btn').on("click", hideSearchBar);
@@ -75,17 +100,21 @@ $(document).ready(function() {
     $('.nav_cover').hide();
     $('.get_quote').hide();
     $('.search_bar_top').css("display","inline-block");
+    $('.search_bar_top').addClass('animated fadeInRight');
+    $('#search__input').focus();
     $(this).hide();
     $('#search_close_btn').css("display","inline-block");
   }
   function hideSearchBar(){
     $('.nav_cover').css("display","inline-block");
     $('.get_quote').css("display","inline-block");
+    $('.search_bar_top').removeClass('fadeInRight');
     $('.search_bar_top').hide();
     $(this).hide();
     $('#search_btn').css("display","inline-block");
   }
 
+  //END: show search bar
 
 })
 

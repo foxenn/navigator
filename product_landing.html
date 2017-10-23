@@ -36,33 +36,47 @@
 				<div class="pull_right">
 					<div class="nav_cover inl_block">
 						<ul class="nav text-right main_nav">
-							<li class="inl_block"><a href="javascript:void(0);">products</a></li>
-							<li class="inl_block"><a href="javascript:void(0);">claim center</a></li>
-							<li class="inl_block"><a href="javascript:void(0);">about us</a></li>
-							<li class="inl_block"><a href="javascript:void(0);">resources</a></li>
-							<li class="inl_block"><a href="javascript:void(0);">contact</a></li>
+							<li class="inl_block"><a href="javascript:void(0);" class="hvr-underline-from-center">claim center</a></li>
+							<li class="inl_block active"><a href="javascript:void(0);" class="hvr-underline-from-center">about us</a></li>
+							<li class="inl_block"><a href="javascript:void(0);" class="hvr-underline-from-center">resources</a></li>
+							<li class="inl_block"><a href="javascript:void(0);" class="hvr-underline-from-center">contact</a></li>
 						</ul>
-						<ul class="nav text-right">
-							<li class="inl_block"><a href="javascript:void(0);">cars</a></li>
-							<li class="inl_block"><a href="javascript:void(0);">home</a></li>
-							<li class="inl_block"><a href="javascript:void(0);">tenant/renter</a></li>
-							<li class="inl_block"><a href="javascript:void(0);">condo owner</a></li>
-							<li class="inl_block"><a href="javascript:void(0);">motorcycle</a></li>
-							<li class="inl_block"><a href="javascript:void(0);">other services</a></li>
+						<ul class="nav text-right sub_nav">
+							<li class="inl_block"><a href="javascript:void(0);" class="hvr-underline-from-center">cars</a></li>
+							<li class="inl_block"><a href="javascript:void(0);" class="hvr-underline-from-center">home</a></li>
+							<li class="inl_block"><a href="javascript:void(0);" class="hvr-underline-from-center">tenant/renter</a></li>
+							<li class="inl_block"><a href="javascript:void(0);" class="hvr-underline-from-center">condo owner</a></li>
+							<li class="inl_block"><a href="javascript:void(0);" class="hvr-underline-from-center">motorcycle</a></li>
+							<li class="inl_block"><a href="javascript:void(0);" class="hvr-underline-from-center">other services</a></li>
 						</ul>
 					</div>
 					<div class="get_quote inl_block vtop">
 						<a href="javascript:void(0);" class="inl_block">get a quote</a>
 					</div>
+
+
+					<!-- Search bar here -->
+					<div class="search_bar_top inl_block">
+						<span class="search_bar_cover inl_block">
+							<input id="search__input" type="text" placeholder="">
+							<p class="act_placeholder">Tap to search...</p>
+						</span>
+					</div>
+
+					<!-- search icon toggle - in js -->
 					<div class="search_icon inl_block vtop">
-						<span><img src="images/icons/search.svg" alt=""></span>
+						<span id="search_btn">
+							<img src="images/icons/search.svg" alt="">
+						</span>
+						<span id="search_close_btn">
+							<img src="images/icons/cross_red.svg" alt="">
+						</span>
 					</div>
 				</div>
 
 				<div class="clear_fix"></div>
 			</div>
 		</header>
-
 
 		<!-- prod land banner -->
 		
@@ -273,6 +287,89 @@
 
 
 
+		<!-- product details tabs here -->
+
+
+		<section class="product_details_here">
+			<div class="main_container">
+				<div class="details__cover make_table">
+					<div class="pro_types_cover table_cell">
+						<h6>Home Insurance<span class="red_cont">.</span></h6>
+						<hr class="no_margin">
+						<ul class="pro_type_list no_list_style">
+							<li><a href="">House</a></li>
+							<li class="active"><a href="">Condo</a></li>
+							<li><a href="">Tenant / Renter</a></li>
+							<li><a href="">Air Bnb</a></li>
+							<li><a href="">Cottage</a></li>
+							<li><a href="">High Value Home</a></li>
+							<li><a href="">Collections</a></li>
+						</ul>
+					</div>
+					<div class="details_type_cover table_cell">
+						<div class="its_title">
+							<h2 class="no_margin">Insurance for Condo Owners</h2>
+						</div>
+						<div class="about_para">
+							<p>Vivamus a odio a risus suscipit ultricies in vel turpis. Quisque varius ante id elit efficitur, ac venenatis metus iaculis. Ut ac ipsum quis erat sagittis varius. Sed finibus metus lorem, nec lacinia felis varius a. Sed sem enim, ornare ac faucibus et, pellentesque sed lacus. In hac habitasse platea dictumst.</p>
+						</div>
+						<div class="sub_title">
+							<h4 class="no_margin">Description Two<span class="red_cont">.</span></h4>
+						</div>
+						<div class="about_para">
+							<p>Praesent commodo lorem nec felis ultrices luctus. Mauris commodo, ante rutrum tincidunt scelerisque, urna risus pretium sem, at ultrices augue massa eu tortor. Donec semper tincidunt diam ut efficitur. Aliquam ut <span class="red_cont underline">sodales</span> odio. Cras feugiat, nisi ac dapibus ultricies, risus lorem sodales massa, vel fringilla massa nunc in metus. Donec fermentum ac tortor a molestie. </p>
+						</div>
+						<div class="sub_title">
+							<h5 class="no_margin">Description Three<span class="red_cont">.</span></h5>
+						</div>
+						<div class="about_para">
+							<p>Suspendisse blandit tincidunt arcu, quis laoreet dolor faucibus a. Pellentesque ultrices tortor sit amet tortor pretium rutrum. Aliquam iaculis eros enim, ac convallis erat auctor eu. In feugiat convallis felis, nec ornare eros suscipit et. Phasellus tristique ipsum facilisis, vehicula sapien bibendum, mollis dolor. Vestibulum a sapien sed ex sollicitudin congue. Donec scelerisque metus in placerat ornare. Aliquam sed sapien in orci maximus convallis sed nec est.</p>
+						</div>
+						<div class="order_list_cont">
+							<ul class="no_list_style">
+								<li class="order_item">
+									<div class="order_no"><span class="red_cont list_no_cover"><span class="list_no">1</span></span></div>
+									<div class="order_cont">
+										<h5>Ordered Item One</h5>
+										<p>Vivamus volutpat, ipsum in tincidunt gravida, metus mauris tempus massa.</p>
+									</div>
+								</li>
+								<li class="order_item">
+									<div class="order_no"><span class="red_cont list_no_cover"><span class="list_no">2</span></span></div>
+									<div class="order_cont">
+										<h5>Ordered Item One</h5>
+										<p>Vivamus volutpat, ipsum in tincidunt gravida, metus mauris tempus massa.</p>
+									</div>
+								</li>
+								<li class="order_item">
+									<div class="order_no"><span class="red_cont list_no_cover"><span class="list_no">3</span></span></div>
+									<div class="order_cont">
+										<h5>Ordered Item One</h5>
+										<p>Vivamus volutpat, ipsum in tincidunt gravida, metus mauris tempus massa.</p>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<div class="about_para">
+							<p>Donec semper tincidunt diam ut efficitur. Aliquam ut sodales odio. Cras feugiat, nisi ac dapibus ultricies, risus lorem sodales massa, vel fringilla massa nunc in metus. Donec fermentum ac tortor a molestie.</p>
+						</div>
+					</div>
+					<div class="share_icons_cover details_share table_cell">
+						<p>Share</p>
+						<ul class="no_list_style">
+							<li class="text_center"><span><a href=""><img src="images/icons/fb_icon.svg" alt=""></a></span></li>
+							<li class="text_center"><span><a href=""><img src="images/icons/twitter_icon.svg" alt=""></a></span></li>
+							<li class="text_center"><span><a href=""><img src="images/icons/gplus_icon.svg" alt=""></a></span></li>
+							<li class="text_center"><span><a href=""><img src="images/icons/lin_icon.svg" alt=""></a></span></li>
+							<li class="text_center"><span><a href=""><img src="images/icons/mail_share.svg" alt=""></a></span></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+
 		<!-- featured insurance -->
 
 		<section class="featured_insurance">
@@ -382,8 +479,9 @@
 					</div>
 					<div class="right_content pull_right">
 						<div class="subcribe_cover">
-							<form action="POST" class="subscribe_me pull_right">
-								<input type="email" placeholder="Type your e-mail.." class="vtop">
+							<form action="POST" class="subscribe_me pull_right make_relative">
+								<input type="email" class="vtop" id="sub_email_inp">
+								<p class="act_placeholder">Tap your e-mail..</p>
 								<span class="inl_block"><input type="submit" value="Subscribe!" class="text_center"></span>
 							</form>
 						</div>
