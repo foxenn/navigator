@@ -7,7 +7,6 @@ $(document).ready(function() {
   oneOwl.owlCarousel({
     items: 1,
     loop: true,
-    margin: 10,
     autoplay: true,
     nav: true,
     navText: ["<img src='images/icons/arrow_left.png'>","<img src='images/icons/arrow_right.png'>"],
@@ -15,35 +14,25 @@ $(document).ready(function() {
     autoplayHoverPause: false,
     dotsContainer: '#carousel-custom-dots'
   });
-  // $('.play').on('click', function() {
-  //   oneOwl.trigger('play.oneOwl.autoplay', [1000])
-  // })
-  // $('.stop').on('click', function() {
-  //   oneOwl.trigger('stop.oneOwl.autoplay')
-  // })
-  $('.owl-dot').click(function () {
-	  oneOwl.trigger('to.oneOwl.carousel', [$(this).index(), 300]);
+  $('#carousel-custom-dots .owl-dot').click(function () {
+	  oneOwl.trigger('to.owl.carousel', [$(this).index(), 300]);
 	})
 
   //get quote options 
   twoOwl.owlCarousel({
     items: 1,
-    loop: true,
-    margin: 10,
-    animateOut: 'fadeIn',
-    animateIn: 'fadeOut',
+    loop: false,
+    animateOut: 'slideOutDown',
+    animateIn: 'flipInX',
+    smartSpeed:350,
     autoplayHoverPause: false,
     smartSpeed:450,
-    dotsContainer: '#get_quote_nav'
+    dotsContainer: '#get_quote_nav',
+    touchDrag: false,
+    mouseDrag: false
   });
-  // $('.play').on('click', function() {
-  //   twoOwl.trigger('play.twoOwl.autoplay', [1000])
-  // })
-  // $('.stop').on('click', function() {
-  //   twoOwl.trigger('stop.twoOwl.autoplay')
-  // })
-  $('#twoOwl .owl-dot').click(function () {
-    twoOwl.trigger('to.twoOwl.carousel', [$(this).index(), 300]);
+  $('#get_quote_nav .owl-dot').click(function () {
+    twoOwl.trigger('to.owl.carousel', [$(this).index(), 300]);
   })
 
 

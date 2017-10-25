@@ -488,6 +488,10 @@ body{
 	font-size: 100%;
 	background-color: #fff;
 }
+.full_max_container{
+	max-width: 1600px;
+	margin: 0 auto;
+}
 .outer_container{
 	max-width: 1498px;
 	margin-left: auto;
@@ -957,6 +961,9 @@ header{
 .feat_img{
 	position: relative;
 }
+.feat_img img{
+	width: 100%; 
+}
 .small_play_btn{
 	position: absolute;
 	height: 76px;
@@ -976,6 +983,7 @@ header{
 }
 .feat_cont{
 	padding: 43px 45px 46px;
+	text-align: left;
 }
 .feat_cont .feat_date p{
 	font-size: 12px;
@@ -1130,22 +1138,22 @@ header{
 /*orderlist design*/
 
 .order_list_cont{
-	padding: 20px 27px 12px;
+	padding: 11px 23px 12px;
 
 }
 .order_item{
 	display: table;
-	margin-bottom: 33px;
+	margin-bottom: 26px;
 }
 .order_no,
 .order_cont{
 	display: table-cell;
 	vertical-align: top;
-	padding: 0 11px;
+	padding: 0 5px 0px 11px;
 }
 .order_no .red_cont{
 	display: inline-block;
-	background-image: url('../images/icons/order_bg.png');
+	background-image: url('../images/icons/order_bg.svg');
 	background-repeat: no-repeat;
 	background-size: contain;
 	background-position: center; 
@@ -1153,8 +1161,8 @@ header{
 .list_no_cover{
 	font-size: 14px;
 	text-align: center;
-	width: 30px;
-	height: 30px;
+	width: 41px;
+	height: 41px;
 	position: relative;
 }
 .list_no{
@@ -1166,9 +1174,9 @@ header{
 	transform: translate(-50%, -50%);
 }
 .order_cont h5{
-	margin-top: 2px;
+	margin-top: 9px;
 	font-size: 18px;
-	margin-bottom: 8px;
+	margin-bottom: 6px;
 }
 .order_cont p{
 	font-size: 15px;
@@ -1219,7 +1227,7 @@ header{
     border: 2px solid #f6303e;
 }
 .block_cont a:hover{
-	background-color: #fff;
+	background-color: transparent;
 	color: #f6303e;
 }
 .block_two .block_cont{
@@ -1346,11 +1354,12 @@ header{
 	border-bottom: none;
 }
 .career_icon_cover{
-	padding: 0px 63px 0 50px;
+	padding: 0px 38px 0 25px;
 	display: table-cell;
 }
 .career_icon_cover img{
 	vertical-align: top;
+	height: 123px;
 }
 /*.career_row > div{
 	float: left;
@@ -2163,7 +2172,260 @@ textarea.form_box_inp{
 
 
 
+/*============================= START: Responsive style ========================================*/
 
+
+
+
+@media only screen and (max-width: 1442px) {
+	header {
+		max-width: 1185px;
+	}
+
+}
+
+@media only screen and (max-width: 1319px) {
+	.search_bar_top{
+		width: 779px;
+	}
+	.product_box{
+		width: 16%;
+	}
+}
+
+@media only screen and (max-width: 1220px) {
+	
+	.get_q_row input[type="text"], 
+	.get_q_row input[type="number"]{
+		width: 24.4%;
+	}
+	.video__why{
+		background-position: 218% -687%;
+	}
+	.footer_main::before{
+		left: -28%;
+	}
+}
+
+
+@media only screen and (max-width: 1185px) {
+
+	header,
+	.main_container{
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+	.feature_col{
+		width: 32.0%;
+	}
+	.search_bar_top{
+		width: 690px;
+	}
+	.subscribe_me input[type="email"]{
+		width: 318px;
+	}
+	.foot_nav_band li a{
+		border-bottom: 2px solid #fff;
+	}
+	.foot_nav_band li:nth-child(6) a{
+		border-right: none;
+	}
+	.footer_main::before{
+		top: -343px;
+	}
+}
+
+
+@media only screen and (max-width: 1100px) {
+
+	.product_box{
+		width: 33%;
+	}
+	.search_bar_top {
+	    width: 578px;
+	}
+	.product_gridof6 li:nth-child(3) {
+	    border-right: none;
+	}
+	.product_gridof6 li:nth-child(n+4){
+		margin-top: 35px;
+	}
+	.feature_col {
+	   width: 31.8%;
+	}
+	.feature_cards{
+		width: 100%;
+	}
+	.get_q_row input[type="submit"]{
+		width: 23.3%;
+	}
+	.video__why {
+	    background-position: 283% -687%;
+	}
+
+}
+
+@media only screen and (max-width: 1024px) {
+	.search_bar_top {
+	    width: 540px;
+	}
+	.video__why {
+	    background-position: 402% -687%;
+	}
+	.footer_main::before {
+	    left: -33%;
+	}
+	.subscribe_me input[type="email"] {
+	    width: 290px;
+	}
+
+}
+
+
+@media only screen and (max-width: 1000px) {
+
+	.get_q_row input[type="text"], 
+	.get_q_row input[type="number"]{
+		width: 23.9%;
+	}
+	.feature_col{
+		float: none;
+		display: inline-block;
+		width: 48%;
+		margin-bottom: 27px;
+	}
+	.feature_cards{
+		text-align: center;
+	}
+	.feature_cards .feature_col:last-child{
+		margin-bottom: 0px;
+	}
+	.search_bar_top {
+	    width: 468px;
+	}
+	.foot_nav_band li a{
+		padding: 18px 44px;
+	}
+	.foot_nav_band li:nth-child(6) a{
+		border-right: 2px solid #fff;
+	}
+
+	/*get update res*/
+
+	.left_content, 
+	.right_content,
+	.subscribe_me {
+	    width: 100%;
+	    float: none;
+	}
+	.subscribe_me{
+		text-align: right;
+	}
+	.subscribe_me input[type="email"] {
+	    width: 80%;
+	    float: left;
+	}
+	.subcribe_cover {
+	    margin-top: 67px;
+	}
+
+}
+
+
+@media only screen and (max-width: 980px) {
+
+
+
+}
+
+@media only screen and (max-width: 768px) {
+
+
+
+}
+
+
+@media only screen and (max-width: 640px) {
+
+
+
+
+}
+
+
+@media only screen and (max-width: 540px) {
+
+
+
+
+}
+
+@media only screen and (max-width: 480px) {
+
+
+
+}
+
+
+@media only screen and (max-width: 420px) {
+
+
+
+}
+
+@media only screen and (max-width: 375px) {
+
+
+
+}
+
+@media only screen and (max-width: 320px) {
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/***************Retina CSS***************/
+/*@media only screen and (-webkit-min-device-pixel-ratio:2), only screen and (-o-min-device-pixel-ratio:2/1), only screen and (min--moz-device-pixel-ratio:2), only screen and (min-device-pixel-ratio:2) {
+
+input.submit-btn[type="submit"] { background-size: 14px 14px; }
+
+
+}
+
+
+
+
+@media only screen and (-webkit-min-device-pixel-ratio: 3),  only screen and (min-resolution: 3dppx), only screen and (min-resolution: 350dpi)  {
+
+
+}
+*/
+
+
+/*============================= END: Responsive style ========================================*/
 
 
 
