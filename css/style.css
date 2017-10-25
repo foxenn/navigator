@@ -6,7 +6,9 @@ Author: Parachute
 Author URI: http://parachutedev.ca
 */
 
-
+/*====style info====
+Mobile menu break @1000px
+*/
 * {
 	 margin:0 auto;
 }
@@ -525,6 +527,7 @@ body{
 header{
 	padding: 24px 0px 25px;
 	overflow: hidden;
+	z-index: 9;
 }
 .logo a{
 	width: 251px;
@@ -572,6 +575,56 @@ header{
 	cursor: pointer;
 }
 
+/*//mobile responsive*/
+.mob_menu_icon{
+	margin-top: 10px;
+	margin-left: 17px;
+	display: none;
+}
+.mob_menu_icon:hover{
+	cursor: pointer;
+}
+.mob_menu_icon img{
+	width: 26px;
+	height: 21px;
+	display: inline-block;
+} 
+#close_menu_btn{
+	display: none;
+}
+.mobile_menu_container{
+	position: absolute;
+	z-index: 2;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(63, 83, 100, 0.94);
+	top: 0px;
+	left: 0px;
+	display: none;
+}
+.mobile_menu_inner{
+	position: relative;
+	height: 100%;
+}
+.mobile_menu_inner ul{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	-webkit-transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
+	-o-transform: translate(-50%,-50%);
+}
+.mobile_menu_container li a{
+	display: inline-block;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 15px;
+	padding: 15px 20px;
+}
+.mobile_menu_container li:last-child a{
+	background-color: #f6303e;
+}
 #sub_nav_header .main_nav{
 	margin-top: -7px;
 }
@@ -722,11 +775,13 @@ header{
 }
 .footer_nav{
 	padding-bottom: 70px;
+	text-align: center;
 }
 .foot_col{
 	width: 16.2%;
 	display: inline-block;
 	vertical-align: top;
+	text-align: left;
 }
 .foot_col h6{
 	font-size: 18px;
@@ -794,9 +849,11 @@ header{
 	background-size: cover;
 	min-height: 441px;
 	position: relative;
+	overflow: hidden;
 }
 .banner_tag_line{
 	padding-top: 152px;
+	max-width: 60%;
 }
 .banner_tag_line h1{
 	font-weight: bold;
@@ -906,6 +963,7 @@ header{
 	background-repeat: no-repeat;
 	background-position: center;
 	background-color: #fff; 
+    box-shadow: 1px 1px 10px #c1c1c1;
 }
 .play_btn:hover{
 	cursor: pointer;
@@ -2179,7 +2237,7 @@ textarea.form_box_inp{
 
 @media only screen and (max-width: 1442px) {
 	header {
-		max-width: 1185px;
+		max-width: 1248px;
 	}
 
 }
@@ -2262,6 +2320,9 @@ textarea.form_box_inp{
 	.video__why {
 	    background-position: 283% -687%;
 	}
+	.banner_tag_line{
+		max-width: 80%;
+	}
 
 }
 
@@ -2291,7 +2352,7 @@ textarea.form_box_inp{
 	.feature_col{
 		float: none;
 		display: inline-block;
-		width: 48%;
+		width: 47%;
 		margin-bottom: 27px;
 	}
 	.feature_cards{
@@ -2308,6 +2369,9 @@ textarea.form_box_inp{
 	}
 	.foot_nav_band li:nth-child(6) a{
 		border-right: 2px solid #fff;
+	}
+	.banner_tag_line {
+	    max-width: 100%;
 	}
 
 	/*get update res*/
@@ -2328,42 +2392,205 @@ textarea.form_box_inp{
 	.subcribe_cover {
 	    margin-top: 67px;
 	}
-
+	
+	.nav_cover, 
+	.get_quote{
+		display: none!important;
+	}
+	.mob_menu_icon{
+		display: inline-block;
+	}
+	.footer_main::before{
+		left: -49%;
+		top: -482px;
+	}
 }
 
 
-@media only screen and (max-width: 980px) {
+@media only screen and (max-width: 932px) {
 
-
-
+	.search_bar_top {
+	    width: 270px;
+	}
+	.foot_col{
+		width: 19.2%;
+		margin-bottom: 70px;
+	}
+	.foot_col:last-child{
+		margin-bottom: 0px;
+	}
+	.subscribe_me input[type="email"]{
+		width: 78%;
+	}
+	.copy_right {
+		float: none;
+		display: block;
+		text-align: center;
+	}
+	.copy_right span{
+		display: block;	
+		margin-top: 6px;
+		margin-bottom: 32px;
+	}
+	.sociol_icon {
+		float: none;
+		text-align: center;
+	}
+	.foot_bottom {
+	    padding-top: 56px;
+	}
 }
 
 @media only screen and (max-width: 768px) {
 
-
-
+	.home_banner{
+		min-height: 453px;
+	}
+	.banner_tag_line {
+	    padding-top: 151px;
+	}
+	.pick_product_cover {
+	    padding: 60px 0px;
+	}
+	.video__why{
+		padding-top: 40px;
+		background-size: 82% 82%;
+		background-position: 321% 322%;
+	}
+	.home_pg_drop_get_quote{
+		margin-bottom: 30px;
+	}
+	.choose_reson_cont{
+		width: 80%;
+	}
+	.choose_reson_cont .owl-nav .owl-next{
+		right: -15%;
+	}
+	.choose_reson_cont .owl-nav .owl-prev {
+	    left: -15%;
+	}
+	.footer_main::before {
+	    left: -42%;
+	    top: -31%;
+	    width: 86%;
+        height: 86%;
+	}
+	.foot_col{
+		width: 24.3%;
+	}
+	.foot_col:nth-last-child(-n+2){
+		margin-bottom: 0px;
+	}
+	.foot_nav_band li:nth-child(5) a{
+		border-top: 2px solid #fff;
+	}
 }
 
 
-@media only screen and (max-width: 640px) {
+@media only screen and (max-width: 767px) {
 
+	.search_bar_top {
+	    width: 175px;
+	}
+	.get_q_row input[type="text"], 
+	.get_q_row input[type="number"],
+	.get_q_row input[type="submit"]{
+		width: 100%;
+		margin-bottom: 20px;
+		margin-right: 0px;
+	}
+	.subscribe_me input[type="email"] {
+	    width: 74%;
+	}
+	.video_box{
+		width: 100%;
+		height: auto;
+	}
+	.video_box img{
+		width: 100%;
+	}
 
+}
 
+@media only screen and (max-width: 650px) {
 
+	.banner_tag_line h1{
+		font-size: 44px;
+	}
+	.product_box {
+	    width: 49%;
+	}
+	.product_gridof6 li:nth-child(even){
+		border: none;
+		margin-top: 35px;
+	}
+	.product_gridof6 li:nth-child(odd){
+		border-right: 1px solid #dee2e6;
+		margin-top: 35px;
+	}
+	.feature_col{
+		width: 100%;
+		margin-left: 0px;
+		margin-right: 0px;
+	}
+	.foot_col {
+	    width: 32.3%;
+	}
+	.footer_main::before{
+		top: -24%;
+	}
+	.product_gridof6 li:nth-child(-n+2){
+		margin-top: 0px;
+	}
+	.subscribe_me input[type="email"] {
+	    width: 68%;
+	}
+	.pick_product .outer_container{
+		padding-right: 30px;
+		padding-left: 30px;
+	}
 }
 
 
 @media only screen and (max-width: 540px) {
 
-
-
+	.subscribe_me input[type="email"] {
+	    width: 63%;
+	}
+	.main_container {
+	    padding-left: 11px;
+	    padding-right: 11px;
+	}
+	.foot_col:nth-last-child(-n+3) {
+	    margin-bottom: 0px;
+	}
+	.update_icon img{
+		width: 42px;
+		margin-top: 5px;
+	}
+	.pick_product .outer_container {
+	    padding-right: 20px;
+	    padding-left: 20px;
+	}
 
 }
 
 @media only screen and (max-width: 480px) {
+	
+	.banner_tag_line h1{
+		line-height: 52px;
+	}
+	.home_banner {
+	    min-height: 546px;
+	}
+	.banner_tag_line {
+	    padding-top: 188px;
+	}
+	.product_box h4{
+		font-size: 22px;
+	}
 
-
-
+	
 }
 
 

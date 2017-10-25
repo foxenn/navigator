@@ -103,6 +103,24 @@ $(document).ready(function() {
     $('#search_btn').css("display","inline-block");
   }
 
+  $('#open_menu_btn').on("click", showMobMenu);
+  $('#close_menu_btn').on("click", hideMobMenu);
+
+  function showMobMenu(){
+    $(this).hide();
+    $('#close_menu_btn').css("display","inline-block");
+    $('#mob_menu').removeClass('animated zoomOut');
+    $('#mob_menu').css("display","block");
+    $('#mob_menu').addClass('animated zoomIn');
+  }
+
+  function hideMobMenu(){
+    $(this).hide();
+    $('#open_menu_btn').css("display","inline-block");
+    $('#mob_menu').removeClass('animated zoomIn');
+    $('#mob_menu').addClass('animated zoomOut');
+  }
+
   //END: show search bar
 
 })
